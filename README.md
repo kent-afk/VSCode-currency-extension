@@ -1,65 +1,25 @@
-# curency-check-2025 README
+# Currency Check Extension
 
-This is the README for your extension "curency-check-2025". After writing up a brief description, we recommend including the following sections.
+## Description
+
+The **Currency Check Extension** for Visual Studio Code provides real-time currency exchange rate information in the status bar. The extension shows the current USD to RUB exchange rate and provides an option to view the exchange rate history in a graphical format. The data is fetched periodically, and you can configure the update interval.
+
+This extension uses the Central Bank of Russia's exchange rates to display the current exchange rate and to generate historical graphs of USD to RUB from 2020 to the present.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Real-Time Exchange Rate**: Displays the current USD to RUB exchange rate in the status bar.
+- **Graphical Representation**: Click on the status bar item to view a graph of USD to RUB exchange rates from 2020 to the present.
+- **Customizable Update Interval**: Set the interval (in seconds) for updating the exchange rate in the extension settings.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or pressing `Ctrl+Shift+X`.
+3. Search for `currency-check`.
+4. Click **Install** on the **Currency Check** extension by `your-name`.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Alternatively, you can install the extension from the command line using:
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+```bash
+code --install-extension your-name.currency-check
