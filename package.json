@@ -1,0 +1,50 @@
+{
+  "name": "curency-check-2025",
+  "displayName": "currency-check",
+  "description": "money-management",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+  "onStartupFinished",
+  "onCommand:extension.helloWorld"
+],
+  "main": "./extension.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+"contributes": {
+  "commands": [
+    {
+      "command": "extension.refreshRate",
+      "title": "Refresh Currency Rate"
+    }
+  ],
+  "configuration": {
+    "properties": {
+      "currencyRate.updateInterval": {
+        "type": "number",
+        "default": 60,
+        "description": "Интервал обновления курса (в секундах)"
+      }
+    }
+  }
+}
+
+}
+
+
